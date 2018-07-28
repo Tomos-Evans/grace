@@ -76,7 +76,7 @@ class DrinksList extends React.Component<IProps, IState> {
         return (
             <div className={this.props.classes.root}>
               <List>
-                  {this.props.drinks.map((drink: IDrink) => (<DrinkListItem drink={drink} callback={this.handleClickOpen}/>))}
+                  {this.props.drinks.map((drink: IDrink) => (<DrinkListItem key={drink.name} drink={drink} callback={this.handleClickOpen}/>))}
               </List>
               <Dialog
                   open={this.state.open}

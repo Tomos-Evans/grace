@@ -36,105 +36,105 @@ const drinks:IDrink[] = [
             {ingredient: {name: "vodka"}, units: 3},
             {ingredient: {name: "orange"}, units: 200},
         ],
-        name: "Screw driver"
+        name: "Screw drivedr2"
     },
     {
         ingredients: [
             {ingredient: {name: "vodka"}, units: 3},
             {ingredient: {name: "orange"}, units: 200},
         ],
-        name: "Screw driver"
+        name: "Screw driver2"
     },
     {
         ingredients: [
             {ingredient: {name: "vodka"}, units: 3},
             {ingredient: {name: "orange"}, units: 200},
         ],
-        name: "Screw driver"
+        name: "Screw driver3"
     },
     {
         ingredients: [
             {ingredient: {name: "vodka"}, units: 3},
             {ingredient: {name: "orange"}, units: 200},
         ],
-        name: "Screw driver"
+        name: "Screw driver4"
     },
     {
         ingredients: [
             {ingredient: {name: "vodka"}, units: 3},
             {ingredient: {name: "orange"}, units: 200},
         ],
-        name: "Screw driver"
+        name: "Screw driver5"
     },
     {
         ingredients: [
             {ingredient: {name: "vodka"}, units: 3},
             {ingredient: {name: "orange"}, units: 200},
         ],
-        name: "Screw driver"
+        name: "Screw driver6"
     },
     {
         ingredients: [
             {ingredient: {name: "vodka"}, units: 3},
             {ingredient: {name: "orange"}, units: 200},
         ],
-        name: "Screw driver"
+        name: "Screw drive7r"
     },
     {
         ingredients: [
             {ingredient: {name: "vodka"}, units: 3},
             {ingredient: {name: "orange"}, units: 200},
         ],
-        name: "Screw driver"
+        name: "Screw drive8r"
     },
     {
         ingredients: [
             {ingredient: {name: "vodka"}, units: 3},
             {ingredient: {name: "orange"}, units: 200},
         ],
-        name: "Screw driver"
+        name: "Screw drive9r"
     },
     {
         ingredients: [
             {ingredient: {name: "vodka"}, units: 3},
             {ingredient: {name: "orange"}, units: 200},
         ],
-        name: "Screw driver"
+        name: "Screw driver0"
     },
     {
         ingredients: [
             {ingredient: {name: "vodka"}, units: 3},
             {ingredient: {name: "orange"}, units: 200},
         ],
-        name: "Screw driver"
+        name: "Screw driver11"
     },
     {
         ingredients: [
             {ingredient: {name: "vodka"}, units: 3},
             {ingredient: {name: "orange"}, units: 200},
         ],
-        name: "Screw driver"
+        name: "Screw driver12"
     },
     {
         ingredients: [
             {ingredient: {name: "vodka"}, units: 3},
             {ingredient: {name: "orange"}, units: 200},
         ],
-        name: "Screw driver"
+        name: "Screw drive23r"
     },
     {
         ingredients: [
             {ingredient: {name: "vodka"}, units: 3},
             {ingredient: {name: "orange"}, units: 200},
         ],
-        name: "Screw driver"
+        name: "Screw driver34"
     },
     {
         ingredients: [
             {ingredient: {name: "vodka"}, units: 3},
             {ingredient: {name: "orange"}, units: 200},
         ],
-        name: "Screw driver"
+        name: "Screw driver45"
     },
 ];
 
