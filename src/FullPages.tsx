@@ -10,133 +10,9 @@ import MenuIcon from '@material-ui/icons/Menu';
 
 import { Divider, Drawer, Hidden, List } from "@material-ui/core";
 
-import DrinksList, { IDrink } from 'src/drinks/Drinks'
-
+import PageContent from "./pages/PageContent";
 
 const drawerWidth = 240;
-
-const drinks:IDrink[] = [
-    {
-        ingredients: [
-            {ingredient: {name: "vodka"}, units: 3},
-            {ingredient: {name: "dissorano"}, units: 2},
-            {ingredient: {name: "coke"}, units: 100},
-        ],
-        name: "God Father"
-    },
-    {
-        ingredients: [
-            {ingredient: {name: "vodka"}, units: 3},
-            {ingredient: {name: "orange"}, units: 200},
-        ],
-        name: "Screw driver"
-    },
-    {
-        ingredients: [
-            {ingredient: {name: "vodka"}, units: 3},
-            {ingredient: {name: "orange"}, units: 200},
-        ],
-        name: "Screw drivedr2"
-    },
-    {
-        ingredients: [
-            {ingredient: {name: "vodka"}, units: 3},
-            {ingredient: {name: "orange"}, units: 200},
-        ],
-        name: "Screw driver2"
-    },
-    {
-        ingredients: [
-            {ingredient: {name: "vodka"}, units: 3},
-            {ingredient: {name: "orange"}, units: 200},
-        ],
-        name: "Screw driver3"
-    },
-    {
-        ingredients: [
-            {ingredient: {name: "vodka"}, units: 3},
-            {ingredient: {name: "orange"}, units: 200},
-        ],
-        name: "Screw driver4"
-    },
-    {
-        ingredients: [
-            {ingredient: {name: "vodka"}, units: 3},
-            {ingredient: {name: "orange"}, units: 200},
-        ],
-        name: "Screw driver5"
-    },
-    {
-        ingredients: [
-            {ingredient: {name: "vodka"}, units: 3},
-            {ingredient: {name: "orange"}, units: 200},
-        ],
-        name: "Screw driver6"
-    },
-    {
-        ingredients: [
-            {ingredient: {name: "vodka"}, units: 3},
-            {ingredient: {name: "orange"}, units: 200},
-        ],
-        name: "Screw drive7r"
-    },
-    {
-        ingredients: [
-            {ingredient: {name: "vodka"}, units: 3},
-            {ingredient: {name: "orange"}, units: 200},
-        ],
-        name: "Screw drive8r"
-    },
-    {
-        ingredients: [
-            {ingredient: {name: "vodka"}, units: 3},
-            {ingredient: {name: "orange"}, units: 200},
-        ],
-        name: "Screw drive9r"
-    },
-    {
-        ingredients: [
-            {ingredient: {name: "vodka"}, units: 3},
-            {ingredient: {name: "orange"}, units: 200},
-        ],
-        name: "Screw driver0"
-    },
-    {
-        ingredients: [
-            {ingredient: {name: "vodka"}, units: 3},
-            {ingredient: {name: "orange"}, units: 200},
-        ],
-        name: "Screw driver11"
-    },
-    {
-        ingredients: [
-            {ingredient: {name: "vodka"}, units: 3},
-            {ingredient: {name: "orange"}, units: 200},
-        ],
-        name: "Screw driver12"
-    },
-    {
-        ingredients: [
-            {ingredient: {name: "vodka"}, units: 3},
-            {ingredient: {name: "orange"}, units: 200},
-        ],
-        name: "Screw drive23r"
-    },
-    {
-        ingredients: [
-            {ingredient: {name: "vodka"}, units: 3},
-            {ingredient: {name: "orange"}, units: 200},
-        ],
-        name: "Screw driver34"
-    },
-    {
-        ingredients: [
-            {ingredient: {name: "vodka"}, units: 3},
-            {ingredient: {name: "orange"}, units: 200},
-        ],
-        name: "Screw driver45"
-    },
-];
 
 const styles = (theme:Theme) => createStyles({
     appBar: {
@@ -180,7 +56,7 @@ interface IState {
     mobileOpen: boolean,
   };
 
-class TopBar extends React.Component<IProps, IState> {
+class FullPages extends React.Component<IProps, IState> {
     public constructor(props: IProps) {
         super(props);
 
@@ -249,7 +125,7 @@ class TopBar extends React.Component<IProps, IState> {
             <main className={classes.content}>
               <div className={classes.toolbar} />
 
-              <DrinksList drinks={drinks}/>
+              <PageContent />
 
             </main>
           </div>
@@ -261,4 +137,4 @@ class TopBar extends React.Component<IProps, IState> {
   };
 }
 
-export default withStyles(styles, { withTheme: true })(TopBar);
+export default withStyles(styles, { withTheme: true })(FullPages);
