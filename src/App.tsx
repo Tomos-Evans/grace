@@ -9,7 +9,7 @@ class App extends React.Component {
     public render() {
         return (
             <MuiThemeProvider theme={theme}>
-                <TopBar pageTitle="Hello"/>
+                <TopBar />
             </MuiThemeProvider>
         );
     }
