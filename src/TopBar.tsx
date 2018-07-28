@@ -89,7 +89,7 @@ class TopBar extends React.Component<IProps, IState> {
                   <MenuIcon />
                 </IconButton>
                 <Typography variant="title" color="inherit" noWrap={true}>
-                  Responsive drawer
+                  The Garrison
                 </Typography>
               </Toolbar>
             </AppBar>
