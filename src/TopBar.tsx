@@ -249,10 +249,7 @@ class TopBar extends React.Component<IProps, IState> {
             <main className={classes.content}>
               <div className={classes.toolbar} />
 
-
               <DrinksList drinks={drinks}/>
-
-
 
             </main>
           </div>
