@@ -80,6 +80,62 @@ const drinks:IDrink[] = [
         ],
         name: "Screw driver"
     },
+    {
+        ingredients: [
+            {ingredient: {name: "vodka"}, units: 3},
+            {ingredient: {name: "orange"}, units: 200},
+        ],
+        name: "Screw driver"
+    },
+    {
+        ingredients: [
+            {ingredient: {name: "vodka"}, units: 3},
+            {ingredient: {name: "orange"}, units: 200},
+        ],
+        name: "Screw driver"
+    },
+    {
+        ingredients: [
+            {ingredient: {name: "vodka"}, units: 3},
+            {ingredient: {name: "orange"}, units: 200},
+        ],
+        name: "Screw driver"
+    },
+    {
+        ingredients: [
+            {ingredient: {name: "vodka"}, units: 3},
+            {ingredient: {name: "orange"}, units: 200},
+        ],
+        name: "Screw driver"
+    },
+    {
+        ingredients: [
+            {ingredient: {name: "vodka"}, units: 3},
+            {ingredient: {name: "orange"}, units: 200},
+        ],
+        name: "Screw driver"
+    },
+    {
+        ingredients: [
+            {ingredient: {name: "vodka"}, units: 3},
+            {ingredient: {name: "orange"}, units: 200},
+        ],
+        name: "Screw driver"
+    },
+    {
+        ingredients: [
+            {ingredient: {name: "vodka"}, units: 3},
+            {ingredient: {name: "orange"}, units: 200},
+        ],
+        name: "Screw driver"
+    },
+    {
+        ingredients: [
+            {ingredient: {name: "vodka"}, units: 3},
+            {ingredient: {name: "orange"}, units: 200},
+        ],
+        name: "Screw driver"
+    },
 ];
 
 const styles = (theme:Theme) => createStyles({
@@ -88,7 +144,7 @@ const styles = (theme:Theme) => createStyles({
         [theme.breakpoints.up('md')]: {
             width: `calc(100% - ${drawerWidth}px)`,
         },
-        position: 'absolute',
+        position: 'fixed',
     },
     content: {
         backgroundColor: theme.palette.background.paper,
@@ -109,7 +165,7 @@ const styles = (theme:Theme) => createStyles({
     root: {
         display: 'flex',
         flexGrow: 1,
-        height: 430,
+        height: '100%',
         overflow: 'hidden',
         position: 'relative',
         width: '100%',

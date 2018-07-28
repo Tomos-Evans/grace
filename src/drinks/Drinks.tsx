@@ -29,7 +29,7 @@ const styles = (theme:Theme) => createStyles({
 
 function DrinkListItem (props: {drink:IDrink}){
     return (
-        <ListItem>
+        <ListItem dense={true}>
           <ListItemText
               primary={props.drink.name}
               secondary={props.drink.ingredients.map((i) => i.ingredient.name.toLowerCase()).join(", ")}
