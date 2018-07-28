@@ -27,9 +27,9 @@ const styles = (theme:Theme) => createStyles({
     },
 });
 
-function DrinkListItem (props: {drink:IDrink}){
+function DrinkListItem (props: {drink:IDrink, callback: ()=>void}){
     return (
-        <ListItem dense={true}>
+        <ListItem dense={false} disabled={false} button={true} onClick={props.callback}>
           <ListItemText
               primary={props.drink.name}
               secondary={props.drink.ingredients.map((i) => i.ingredient.name.toLowerCase()).join(", ")}
@@ -48,10 +48,14 @@ class DrinksList extends React.Component<IProps> {
         return (
             <div className={this.props.classes.root}>
               <List>
-                  {this.props.drinks.map((drink: IDrink) => (<DrinkListItem drink={drink}/>))}
+                  {this.props.drinks.map((drink: IDrink) => (<DrinkListItem drink={drink} callback={this.confirmOrder}/>))}
               </List>
             </div>
         );
+    }
+
+    public confirmOrder = () => {
+        alert("Are you sure you want to order a drink?")
     }
 }
 
