@@ -10,7 +10,77 @@ import MenuIcon from '@material-ui/icons/Menu';
 
 import { Divider, Drawer, Hidden, List } from "@material-ui/core";
 
+import DrinksList, { IDrink } from 'src/drinks/Drinks'
+
+
 const drawerWidth = 240;
+
+const drinks:IDrink[] = [
+    {
+        ingredients: [
+            {ingredient: {name: "vodka"}, units: 3},
+            {ingredient: {name: "dissorano"}, units: 2},
+            {ingredient: {name: "coke"}, units: 100},
+        ],
+        name: "God Father"
+    },
+    {
+        ingredients: [
+            {ingredient: {name: "vodka"}, units: 3},
+            {ingredient: {name: "orange"}, units: 200},
+        ],
+        name: "Screw driver"
+    },
+    {
+        ingredients: [
+            {ingredient: {name: "vodka"}, units: 3},
+            {ingredient: {name: "orange"}, units: 200},
+        ],
+        name: "Screw driver"
+    },
+    {
+        ingredients: [
+            {ingredient: {name: "vodka"}, units: 3},
+            {ingredient: {name: "orange"}, units: 200},
+        ],
+        name: "Screw driver"
+    },
+    {
+        ingredients: [
+            {ingredient: {name: "vodka"}, units: 3},
+            {ingredient: {name: "orange"}, units: 200},
+        ],
+        name: "Screw driver"
+    },
+    {
+        ingredients: [
+            {ingredient: {name: "vodka"}, units: 3},
+            {ingredient: {name: "orange"}, units: 200},
+        ],
+        name: "Screw driver"
+    },
+    {
+        ingredients: [
+            {ingredient: {name: "vodka"}, units: 3},
+            {ingredient: {name: "orange"}, units: 200},
+        ],
+        name: "Screw driver"
+    },
+    {
+        ingredients: [
+            {ingredient: {name: "vodka"}, units: 3},
+            {ingredient: {name: "orange"}, units: 200},
+        ],
+        name: "Screw driver"
+    },
+    {
+        ingredients: [
+            {ingredient: {name: "vodka"}, units: 3},
+            {ingredient: {name: "orange"}, units: 200},
+        ],
+        name: "Screw driver"
+    },
+];
 
 const styles = (theme:Theme) => createStyles({
     appBar: {
@@ -21,7 +91,7 @@ const styles = (theme:Theme) => createStyles({
         position: 'absolute',
     },
     content: {
-        backgroundColor: theme.palette.background.default,
+        backgroundColor: theme.palette.background.paper,
         flexGrow: 1,
         padding: theme.spacing.unit * 3,
     },
@@ -122,7 +192,12 @@ class TopBar extends React.Component<IProps, IState> {
             </Hidden>
             <main className={classes.content}>
               <div className={classes.toolbar} />
-              <Typography noWrap={true}>{'You think water moves fast? You should see ice.'}</Typography>
+
+
+              <DrinksList drinks={drinks}/>
+
+
+
             </main>
           </div>
         );
