@@ -4,8 +4,12 @@ import App from './App';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 
+import {  BrowserRouter as Router } from "react-router-dom"
+
 ReactDOM.render(
-  <App />,
+  <Router>
+      <App />
+  </Router>,
   document.getElementById('root') as HTMLElement
 );
 registerServiceWorker();
