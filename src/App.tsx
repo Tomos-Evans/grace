@@ -15,13 +15,15 @@ import Toolbar from '@material-ui/core/Toolbar';
 
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import PageContent from 'src/pages/PageContent';
+
+import DrinksList from 'src/pages/DrinksList';
 
 import Drawer from '@material-ui/core/Drawer';
 
 import { Link, Route } from "react-router-dom"
 
 import SettingsPage from "src/pages/SettingsPage"
+
 
 const drawerWidth = 240;
 
@@ -68,14 +70,13 @@ interface IState {
     mobileOpen: boolean,
   };
 
-
 class App  extends React.Component<IProps, IState> {
     public constructor(props: IProps) {
         super(props);
         this.state = {
             mobileOpen: false,
         };
-  }
+    }
 
     public render() {
         const { classes } = this.props;
@@ -86,12 +87,12 @@ class App  extends React.Component<IProps, IState> {
             <Divider />
             <div>
                 <List>
-                  <ListItem button={true}>
+                  <ListItem >
                     <ListItemText>
                       <Link to="/menu">Menu</Link>
                     </ListItemText>
                   </ListItem>
-                  <ListItem button={true}>
+                  <ListItem >
                     <ListItemText>
                       <Link to="/settings">Settings</Link>
                     </ListItemText>
@@ -148,8 +149,8 @@ class App  extends React.Component<IProps, IState> {
                     <main className={classes.content}>
                         <div className={classes.toolbar} />
 
-                        {/* <PageContent /> */}
-                        <Route exact={true} path="/menu" component={PageContent}/>
+                        <Route exact={true} path="/" component={DrinksList}/>
+                        <Route exact={true} path="/menu" component={DrinksList}/>
                         <Route exact={true} path="/settings" component={SettingsPage}/>
 
 
